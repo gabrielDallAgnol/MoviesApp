@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bT5-Ul-XEY">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arvo-Regular.ttf">
+            <string>Arvo</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="mLM-2T-KqJ">
+            <objects>
+                <viewController id="bT5-Ul-XEY" customClass="HomeController" customModule="MoviesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x3b-TI-m2b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="g7Y-RC-ZLE">
+                                <rect key="frame" x="132" y="378" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hPW-QA-Od5"/>
+                                    <constraint firstAttribute="width" constant="150" id="z8h-26-iii"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjJ-0F-XnR">
+                                <rect key="frame" x="20" y="536" width="374" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Arvo" family="Arvo" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91407006980000005" green="0.90734618899999997" blue="0.81969743969999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BjJ-0F-XnR" firstAttribute="leading" secondItem="UdK-uU-KCa" secondAttribute="leading" constant="20" id="77h-Eg-Rxg"/>
+                            <constraint firstItem="UdK-uU-KCa" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BjJ-0F-XnR" secondAttribute="bottom" constant="8" id="9zc-Et-8Sx"/>
+                            <constraint firstItem="g7Y-RC-ZLE" firstAttribute="centerX" secondItem="UdK-uU-KCa" secondAttribute="centerX" id="H5m-hy-nsC"/>
+                            <constraint firstItem="UdK-uU-KCa" firstAttribute="trailing" secondItem="BjJ-0F-XnR" secondAttribute="trailing" constant="20" id="N3R-0e-KLL"/>
+                            <constraint firstItem="g7Y-RC-ZLE" firstAttribute="centerY" secondItem="UdK-uU-KCa" secondAttribute="centerY" id="j8A-b6-FCX"/>
+                            <constraint firstItem="BjJ-0F-XnR" firstAttribute="top" secondItem="g7Y-RC-ZLE" secondAttribute="bottom" constant="8" id="wzm-Pb-wMf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UdK-uU-KCa"/>
+                    </view>
+                    <connections>
+                        <outlet property="textMessage" destination="BjJ-0F-XnR" id="JaK-Wo-7l1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4z-SQ-L6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228.98550724637684" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="512" height="512"/>
+    </resources>
+</document>

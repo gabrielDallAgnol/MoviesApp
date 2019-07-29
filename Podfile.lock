@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (5.0.0-beta.6)
+  - AlamofireImage (4.0.0-beta.3):
+    - Alamofire (~> 5.0.0-beta.6)
+  - AlamofireObjectMapper (6.1.0):
+    - Alamofire (= 5.0.0-beta.6)
+    - ObjectMapper (~> 3.4)
+  - Kingfisher (5.7.0)
+  - ObjectMapper (3.5.1)
+  - Realm (3.17.0):
+    - Realm/Headers (= 3.17.0)
+  - Realm/Headers (3.17.0)
+  - RealmSwift (3.17.0):
+    - Realm (= 3.17.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.0.0-beta.6)
+  - AlamofireImage (= 4.0.0-beta.3)
+  - AlamofireObjectMapper (~> 6.1)
+  - Kingfisher (~> 5.0)
+  - ObjectMapper (~> 3.5.1)
+  - RealmSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - Kingfisher
+    - ObjectMapper
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  AlamofireImage: 980b4eccaed1fa559d78bc479d067ff89d23bc95
+  AlamofireObjectMapper: cd819bed60ad326e8920a6c524c19744e15bb237
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Realm: b30db41ff34fc858ffc25ba8d44a82c164e7ccd0
+  RealmSwift: fe733e459d60dc7b6971d4cbee2eb4854097d12c
+
+PODFILE CHECKSUM: 0e0a4d8d87f4861a1638c9c47afb68e9fc2b899e
+
+COCOAPODS: 1.7.3
