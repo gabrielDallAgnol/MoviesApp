@@ -7,7 +7,6 @@ target 'MoviesApp' do
 
   # Pods for MoviesApp
   pod 'RealmSwift'
-  pod 'SwiftyJSON', '~> 4.0'
   pod 'Kingfisher', '~> 5.0'
   pod 'Alamofire', '5.0.0-beta.6'
   pod 'AlamofireImage', '4.0.0-beta.3'
