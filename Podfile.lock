@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (5.0.0-beta.6)
+  - AlamofireImage (4.0.0-beta.3):
+    - Alamofire (~> 5.0.0-beta.6)
+  - AlamofireObjectMapper (6.1.0):
+    - Alamofire (= 5.0.0-beta.6)
+    - ObjectMapper (~> 3.4)
+  - Crashlytics (3.13.2):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
+  - Kingfisher (5.7.0)
+  - ObjectMapper (3.5.1)
+  - Realm (3.17.0):
+    - Realm/Headers (= 3.17.0)
+  - Realm/Headers (3.17.0)
+  - RealmSwift (3.17.0):
+    - Realm (= 3.17.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.0.0-beta.6)
+  - AlamofireImage (= 4.0.0-beta.3)
+  - AlamofireObjectMapper (~> 6.1)
+  - Crashlytics
+  - Fabric
+  - Kingfisher (~> 5.0)
+  - ObjectMapper (~> 3.5.1)
+  - RealmSwift
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - Crashlytics
+    - Fabric
+    - Kingfisher
+    - ObjectMapper
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  AlamofireImage: 980b4eccaed1fa559d78bc479d067ff89d23bc95
+  AlamofireObjectMapper: cd819bed60ad326e8920a6c524c19744e15bb237
+  Crashlytics: 611738c7847f8291a1a51084e35987b86ba6b3ee
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Realm: b30db41ff34fc858ffc25ba8d44a82c164e7ccd0
+  RealmSwift: fe733e459d60dc7b6971d4cbee2eb4854097d12c
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 70a9403982b5963f84d4afeb9e48af737c0b0070
+
+COCOAPODS: 1.7.3
