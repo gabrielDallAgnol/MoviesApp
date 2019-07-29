@@ -22,7 +22,7 @@ Adaptação do layout para Ipad's e tornar a aparencia do app para telas menores
 
 ## Autor
 
-* **Gabriel Schmit** - *Initial work* - [CupcakeNews](https://github.com/cheesecakelabs-cupcakers/gabriel-dallagnol-iOS)
+* **Gabriel Schmit** 
 
 
 
