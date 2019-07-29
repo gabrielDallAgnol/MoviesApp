@@ -27,11 +27,6 @@ class MoviesListController: UIViewController {
         tableView.reloadData()
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-        
-    }
-    
 }
 
 // MARK: - TableView DataSource and Delegate
@@ -144,4 +139,13 @@ extension MoviesListController : UISearchBarDelegate {
         }
         UIView.transition(with: tableView, duration: 0.3, options: .transitionCrossDissolve, animations: {self.tableView.reloadData()}, completion: nil)
     }
+}
+
+extension MoviesListController: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        
+    }
+
 }
