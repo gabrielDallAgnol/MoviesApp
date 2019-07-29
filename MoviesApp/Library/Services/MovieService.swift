@@ -25,23 +25,23 @@ final class MovieService {
                     let upcomingResult = Mapper<UpcomingStruct>().map(JSON: valueJson){
                     
                     for page in 1...upcomingResult.totalPages {
-                                AF.request(self.networking.MovieRequest(service: .Upcoming, page: page)).responseJSON { response in
-                                    print(DBService.shared.getMovies().count)
-                                    switch response.result {
-                                    case let .success(value):
-                                        if  let valueJson = value as? StructJSON,
-                                            let upcomingResult = Mapper<UpcomingStruct>().map(JSON: valueJson),
-                                            let movies = upcomingResult.results{
-                                            
-                                            DBService.shared.addMovies(for: movies)
-                                            
-                                        } else {
-                                            print("Request With Problem")
-                                        }
-                                    case let .failure(error):
-                                        print(error)
-                                    }
+                        AF.request(self.networking.MovieRequest(service: .Upcoming, page: page)).responseJSON { response in
+                            print(DBService.shared.getMovies().count)
+                            switch response.result {
+                            case let .success(value):
+                                if  let valueJson = value as? StructJSON,
+                                    let upcomingResult = Mapper<UpcomingStruct>().map(JSON: valueJson),
+                                    let movies = upcomingResult.results{
+                                    
+                                    DBService.shared.addMovies(for: movies)
+                                    
+                                } else {
+                                    print("Request With Problem")
                                 }
+                            case let .failure(error):
+                                print(error)
+                            }
+                        }
                     }
                 } else {
                     print("Request With Problem")
@@ -60,7 +60,7 @@ final class MovieService {
                 if  let valueJson = value as? StructJSON,
                     let genreResult = Mapper<Genres>().map(JSON: valueJson),
                     let genres = genreResult.genres{
-                            DBService.shared.addGenres(for: genres)
+                    DBService.shared.addGenres(for: genres)
                 } else {
                     print("Request With Problem")
                 }

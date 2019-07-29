@@ -2,7 +2,6 @@
 //  Networking.swift
 //  MoviesApp
 //
-//  Created by Palmsoft  on 28/07/19.
 //  Copyright © 2019 Gabriel. All rights reserved.
 //
 
@@ -24,7 +23,7 @@ class Networking {
                                                  parameters: ["api_key" : apiKey,
                                                               "language" : "en-US",
                                                               "page": String(page)])
-            )!
+                )!
         }
     }
     
@@ -35,7 +34,7 @@ class Networking {
                                                  path: "/genre/movie/list",
                                                  parameters: ["api_key" : apiKey,
                                                               "language" : "en-US"])
-            )!
+                )!
         }
     }
     
@@ -71,23 +70,16 @@ class Networking {
         request.httpMethod = resource.httpMethod
         return request
     }
-    
 }
 
 extension Networking {
-    
     enum MovieAPI {
         case Upcoming
     }
-    
     enum GenreAPI {
         case Movie
     }
-    
     enum SearchAPI {
         case Movies
     }
-    
 }
-
-

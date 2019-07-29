@@ -13,6 +13,4 @@ target 'MoviesApp' do
   pod 'AlamofireImage', '4.0.0-beta.3'
   pod 'ObjectMapper', '~> 3.5.1'
   pod 'AlamofireObjectMapper', '~> 6.1'
-  pod 'Fabric'
-  pod 'Crashlytics'
 end

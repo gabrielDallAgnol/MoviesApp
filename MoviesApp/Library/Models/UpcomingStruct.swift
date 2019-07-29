@@ -2,7 +2,6 @@
 //  UpcomingStruct.swift
 //  MoviesApp
 //
-//  Created by Palmsoft  on 28/07/19.
 //  Copyright © 2019 Gabriel. All rights reserved.
 //
 
@@ -11,7 +10,6 @@ import ObjectMapper
 import UIKit
 
 struct UpcomingStruct: Mappable {
-    
     
     var results: [Movie]?
     var page: Int?
@@ -29,8 +27,6 @@ struct UpcomingStruct: Mappable {
     totalResults     <- map["total_results"]
     dates            <- map["dates"]
     }
-    
-    
 }
 
 struct date: Mappable {
@@ -40,10 +36,8 @@ struct date: Mappable {
     
     init?(map: Map) {
     }
-    
     mutating func mapping(map: Map) {
     maximum             <- map["maximum"]
     minimum             <- map["minimum"]
     }
-    
 }

@@ -2,7 +2,6 @@
 //  MoviesListController.swift
 //  MoviesApp
 //
-//  Created by Palmsoft  on 28/07/19.
 //  Copyright © 2019 Gabriel. All rights reserved.
 //
 
@@ -140,4 +139,3 @@ extension MoviesListController : UISearchBarDelegate {
         UIView.transition(with: tableView, duration: 0.3, options: .transitionCrossDissolve, animations: {self.tableView.reloadData()}, completion: nil)
     }
 }
-

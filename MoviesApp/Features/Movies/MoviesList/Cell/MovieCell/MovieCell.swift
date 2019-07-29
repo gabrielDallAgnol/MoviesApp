@@ -71,5 +71,3 @@ private extension MovieCell {
         }
     }
 }
-
-

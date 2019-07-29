@@ -2,7 +2,6 @@
 //  Genres.swift
 //  MoviesApp
 //
-//  Created by Palmsoft  on 29/07/19.
 //  Copyright © 2019 Gabriel. All rights reserved.
 //
 

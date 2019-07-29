@@ -2,7 +2,6 @@
 //  MovieDetailsController.swift
 //  MoviesApp
 //
-//  Created by Palmsoft  on 28/07/19.
 //  Copyright © 2019 Gabriel. All rights reserved.
 //
 
