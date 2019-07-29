@@ -1,7 +1,3 @@
-# A melhorar
-
-Acredito que o principal ponto que tenho eu melhoraria no app é a tela de 'Content', nao consegui destinar tempo para deixa-la com design aceitavel.
-Adaptação do layout para Ipad's e tornar a aparencia do app para telas menores mais refinada.
 
 ### Instalaçao
 
