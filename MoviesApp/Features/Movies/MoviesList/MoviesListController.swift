@@ -17,6 +17,7 @@ class MoviesListController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         setupSearchBar()
         setupTableView()
         setupCollectionView()
@@ -141,11 +142,19 @@ extension MoviesListController : UISearchBarDelegate {
     }
 }
 
-extension MoviesListController: UITextFieldDelegate {
+extension UIViewController {
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-        
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard(_:)))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
-
+    
+    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+        
+        if let nav = self.navigationController {
+            nav.view.endEditing(true)
+        }
+    }
 }
