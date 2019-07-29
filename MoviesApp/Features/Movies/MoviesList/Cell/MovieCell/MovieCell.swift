@@ -27,8 +27,9 @@ private extension MovieCell {
     
     func setupTexts() {
         movieTitle.text = movie.title
+        
         if let releaseDate = movie.releaseDate {
-             movieRelease.text = "Release in: \(releaseDate))"
+             movieRelease.text = "Release in: \(releaseDate)"
         }
        
         movieTags.text = movie.genres.compactMap({"#\($0.name.replacingOccurrences(of: " ", with: "")) "}).joined()

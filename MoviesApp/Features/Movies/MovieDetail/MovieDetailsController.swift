@@ -25,9 +25,12 @@ class MovieDetailsController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        movieReleaseDate.text = movie.releaseDate
         movieTitle.text = movie.title
         movieOverview.text = movie.overview
+        
+        if let releaseDate = movie.releaseDate {
+            movieReleaseDate.text = "Release in: \(releaseDate)"
+        }
         
         movieGenre.text = movie.genres.compactMap({"#\($0.name.replacingOccurrences(of: " ", with: "")) "}).joined()
         if movieGenre.text == nil {
